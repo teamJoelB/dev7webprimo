@@ -14,6 +14,7 @@
     </head>
     <body>
         <%@include file="menu.jsp" %>
+        <h6 class="text-secondary" style="margin-left:1%"> ${ident} </h6>
         <div class="container">
             <div class="row">
                 <div class="col-sm-4">

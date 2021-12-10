@@ -67,6 +67,7 @@ public class HomeServlet extends HttpServlet {
             try {
                 List<User> users = UserDao.getAll();
                 request.setAttribute("membres", users);
+                request.setAttribute("ident", "Bonjour " + u.getPrenom() + " " + u.getNom());
                 request.getRequestDispatcher("WEB-INF/accueil.jsp").forward(request, response);
             } catch (Exception e) {
                 PrintWriter out = response.getWriter();

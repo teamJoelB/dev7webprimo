@@ -17,9 +17,34 @@
         <h6 class="text-secondary" style="margin-left:1%"> ${ident} </h6>
         <div class="container">
             <div class="row">
-                <div class="col-sm-4">
-
+                <div class="col-sm-4 border-right">
+                        <div class="card p-2">
+                            <h6 class="text-center"> Identifiant </h6>
+                            <hr class="grey-text">
+                            <p class="text-info">le memo le plus recent </p>
+                        </div>
+                        <br>
+                         <div class="card p-2">
+                            <h6 class="text-center"> Identifiant </h6>
+                            <hr class="grey-text">
+                            <p class="text-info">le memo le plus recent </p>
+                        </div>
+                        <br>
+                         <div class="card p-2">
+                            <h6 class="text-center"> Identifiant </h6>
+                            <hr class="grey-text">
+                            <p class="text-info">le memo le plus recent </p>
+                        </div>
+                        <br>
+                         <div class="card p-2">
+                            <h6 class="text-center"> Identifiant </h6>
+                            <hr class="grey-text">
+                            <p class="text-info">le memo le plus recent </p>
+                        </div>
+                        <br>
                 </div>
+            
+                
                 <div class="col-sm-8">
                     <h3 class="grey-text">Liste de des membres</h3>
                     <br>
@@ -27,7 +52,7 @@
                         <c:forEach items="${membres}" var="m">
                             <div class="col-sm-6" >
                                 <div class="card p-2">
-                                    <h6> ${m.prenom} ${m.prenom}  </h6>
+                                    <h6> ${m.nom} ${m.prenom}  </h6>
                                     <hr class="grey-text">
                                     <p class="text-info">${m.login}</p>
                                 </div>

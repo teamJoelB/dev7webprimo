@@ -11,7 +11,6 @@
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
         <title>Login</title>
 
-
         <link rel="stylesheet" href="css/style.css" >
 
         <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
@@ -48,7 +47,7 @@
                             <input name="password"  type="password" class="form-control">
                         </div>
                         <button type="submit" class="btn purple-gradient btn-sm">connexion</button>
-                        <button type="button" class="btn btn-link">S'inscrire ?</button>
+                        <button type="button" onclick="location.href='inscription'" class="btn btn-link">S'inscrire ?</button>
                         <p class="text-danger text-center"> ${msg} </p>
                     </div>
                 </form>

@@ -5,6 +5,7 @@
 --%>
 
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <!DOCTYPE html>
 <html>
     <head>
@@ -13,6 +14,7 @@
     </head>
     <body>
         <%@include file="menu.jsp" %>
+        <h6 class="text-secondary" style="margin-left:1%"> ${ident} </h6>
         <div class="container">
             <h1>Sur public</h1>
         </div>

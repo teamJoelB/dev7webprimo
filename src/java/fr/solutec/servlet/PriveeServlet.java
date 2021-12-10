@@ -61,6 +61,7 @@ public class PriveeServlet extends HttpServlet {
             throws ServletException, IOException {
         User u = (User) request.getSession(true).getAttribute("UserConnect");
         if (u != null) {
+            request.setAttribute("ident", "Bonjour " + u.getPrenom() + " " + u.getNom());
             request.getRequestDispatcher("WEB-INF/privee.jsp").forward(request, response);
         } else {
             request.setAttribute("msg", "Vous devez vous connecter !!!");
